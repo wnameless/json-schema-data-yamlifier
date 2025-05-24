@@ -72,7 +72,7 @@ public final class YamlifierUtils {
   private static void addYamlWithComments(StringBuilder yaml, JsonNode schemaNode,
       JsonNode dataNode, String indent, YamlifierMode mode) {
     if (schemaNode == null || dataNode == null) return;
-    Iterator<Map.Entry<String, JsonNode>> fields = dataNode.fields();
+    Iterator<Map.Entry<String, JsonNode>> fields = dataNode.properties().iterator();
     while (fields.hasNext()) {
       Map.Entry<String, JsonNode> field = fields.next();
       String fieldName = field.getKey();
