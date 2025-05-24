@@ -9,7 +9,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <name>json-schema-data-yamlifier</name>
-  <description>Demo project for Spring Boot</description>
+  <description>Utility for converting JsonSchema Data(JSON) into Yaml</description>
   <url>https://github.com/wnameless/json-schema-data-yamlifier</url>
 
   <licenses>
