@@ -6,7 +6,7 @@
 
   <groupId>com.github.wnameless.json</groupId>
   <artifactId>json-schema-data-yamlifier</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
 
   <name>json-schema-data-yamlifier</name>
   <description>Utility for converting JsonSchema Data(JSON) into Yaml</description>

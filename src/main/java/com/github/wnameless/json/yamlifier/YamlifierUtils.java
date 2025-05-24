@@ -1,8 +1,9 @@
 package com.github.wnameless.json.yamlifier;
 
-import java.io.IOException;
 import java.util.Iterator;
 import java.util.Map;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -16,29 +17,29 @@ public final class YamlifierUtils {
 
   private static final ObjectMapper jsonMapper = new ObjectMapper();
 
-  public static String toYamlWithComments(Map<String, Object> jsonSchema, Object jsonData)
-      throws IOException {
+  public static String toYamlWithComments(Map<String, Object> jsonSchema, Object jsonData) {
     return toYamlWithComments(jsonMapper.convertValue(jsonSchema, JsonNode.class),
         jsonMapper.convertValue(jsonData, JsonNode.class));
   }
 
   public static String toYamlWithComments(Map<String, Object> jsonSchema, Object jsonData,
-      YamlifierMode mode) throws IOException {
+      YamlifierMode mode) {
     return toYamlWithComments(jsonMapper.convertValue(jsonSchema, JsonNode.class),
         jsonMapper.convertValue(jsonData, JsonNode.class), mode);
   }
 
-  public static String toYamlWithComments(String jsonSchema, String jsonData) throws IOException {
+  public static String toYamlWithComments(String jsonSchema, String jsonData)
+      throws JsonMappingException, JsonProcessingException {
     return toYamlWithComments(jsonMapper.readTree(jsonSchema), jsonMapper.readTree(jsonData));
   }
 
   public static String toYamlWithComments(String jsonSchema, String jsonData, YamlifierMode mode)
-      throws IOException {
+      throws JsonMappingException, JsonProcessingException {
     return toYamlWithComments(jsonMapper.readTree(jsonSchema), jsonMapper.readTree(jsonData), mode);
   }
 
   public static String toYamlWithComments(JsonNode schemaNode, JsonNode dataNode,
-      YamlifierMode mode) throws IOException {
+      YamlifierMode mode) {
     StringBuilder yamlWithComments = new StringBuilder("---\n");
     // Print root-level title/description if present
     if (schemaNode.has("title")) {
@@ -49,8 +50,7 @@ public final class YamlifierUtils {
   }
 
   // Overload for backward compatibility (TITLE mode as default)
-  public static String toYamlWithComments(JsonNode schemaNode, JsonNode dataNode)
-      throws IOException {
+  public static String toYamlWithComments(JsonNode schemaNode, JsonNode dataNode) {
     return toYamlWithComments(schemaNode, dataNode, YamlifierMode.TITLE);
   }
 
