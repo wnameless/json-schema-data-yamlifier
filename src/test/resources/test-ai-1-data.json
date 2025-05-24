@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Alice",
+    "gender": "f",
+    "generation": "90",
+    "details": {
+      "age": 33
+    },
+    "contacts": [
+      {
+        "type": "email",
+        "value": "alice@example.com"
+      },
+      {
+        "type": "phone",
+        "value": "+123456789"
+      }
+    ]
+  },
+  [
+    98.7,
+    87.2
+  ],
+  "bar",
+  {
+    "fieldB": 42
+  }
+]

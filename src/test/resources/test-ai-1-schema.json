@@ -1,0 +1,128 @@
+{
+  "title": "Root Array",
+  "description": "The root schema is an array (tuple style).",
+  "type": "array",
+  "items": [
+    {
+      "title": "Person Info",
+      "description": "Information about a person.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "User Name",
+          "description": "Full name.",
+          "type": "string"
+        },
+        "gender": {
+          "title": "Gender",
+          "type": "string",
+          "enum": [
+            "m",
+            "f"
+          ],
+          "enumNames": [
+            "Male",
+            "Female"
+          ]
+        },
+        "generation": {
+          "title": "Generation",
+          "type": "string",
+          "enum": [
+            "80",
+            "90",
+            "00"
+          ],
+          "enumNames": [
+            "1980s",
+            "1990s",
+            "2000s"
+          ]
+        },
+        "details": {
+          "title": "User Details",
+          "type": "object",
+          "properties": {
+            "age": {
+              "title": "Age",
+              "type": "integer"
+            }
+          }
+        },
+        "contacts": {
+          "title": "Contacts",
+          "type": "array",
+          "items": {
+            "title": "Contact",
+            "type": "object",
+            "properties": {
+              "type": {
+                "title": "Contact Type",
+                "type": "string",
+                "enum": [
+                  "email",
+                  "phone"
+                ],
+                "enumNames": [
+                  "E-Mail",
+                  "Phone"
+                ]
+              },
+              "value": {
+                "title": "Value",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Scores",
+      "description": "Score list (homogeneous array).",
+      "type": "array",
+      "items": {
+        "title": "Score",
+        "description": "A score (float).",
+        "type": "number"
+      }
+    },
+    {
+      "title": "Simple Field",
+      "description": "A simple string.",
+      "type": "string",
+      "enum": [
+        "foo",
+        "bar"
+      ],
+      "enumNames": [
+        "Foo Label",
+        "Bar Label"
+      ]
+    },
+    {
+      "title": "Object with anyOf",
+      "type": "object",
+      "anyOf": [
+        {
+          "title": "First Option",
+          "properties": {
+            "fieldA": {
+              "title": "Field A",
+              "type": "string"
+            }
+          }
+        },
+        {
+          "title": "Second Option",
+          "properties": {
+            "fieldB": {
+              "title": "Field B",
+              "type": "integer"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

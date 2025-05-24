@@ -1,0 +1,40 @@
+---
+# Root Array
+# Person Info
+-
+  # User Name
+  name: Alice
+  # Gender
+  gender: f # Female
+  # Generation
+  generation: 90 # 1990s
+  # User Details
+  details:
+    # Age
+    age: 33
+  # Contacts
+  contacts:
+    # Contact
+    -
+      # Contact Type
+      type: email # E-Mail
+      # Value
+      value: alice@example.com
+    # Contact
+    -
+      # Contact Type
+      type: phone # Phone
+      # Value
+      value: +123456789
+# Scores
+-
+  # Score
+  - 98.7
+  # Score
+  - 87.2
+# Simple Field
+- bar # Bar Label
+# Object with anyOf
+-
+  # Field B
+  fieldB: 42

@@ -1,0 +1,17 @@
+---
+# The user's jobs array
+jobs:
+  # Job item
+  - worker # 工人
+# Nested complex array
+interests:
+  # Interest object
+  -
+    # Duration
+    duration: 1
+    # Hobby
+    hobby: Card
+# User Name
+name: John Doe
+# User Age
+age: 30

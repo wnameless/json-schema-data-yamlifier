@@ -1,0 +1,9 @@
+---
+-
+  # Foo field
+  foo: qux
+  bar:
+    # Baz field
+    baz:
+      - 123.456
+      - 789

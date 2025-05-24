@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "foo": "baz"
+    },
+    {
+      "bar": "qux"
+    }
+  ],
+  "firstName": "Chuck"
+}

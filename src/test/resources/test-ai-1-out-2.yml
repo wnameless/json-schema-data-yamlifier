@@ -1,0 +1,47 @@
+---
+# Root Array
+# The root schema is an array (tuple style).
+# Person Info
+# Information about a person.
+-
+  # User Name
+  # Full name.
+  name: Alice
+  # Gender
+  gender: f # Female
+  # Generation
+  generation: 90 # 1990s
+  # User Details
+  details:
+    # Age
+    age: 33
+  # Contacts
+  contacts:
+    # Contact
+    -
+      # Contact Type
+      type: email # E-Mail
+      # Value
+      value: alice@example.com
+    # Contact
+    -
+      # Contact Type
+      type: phone # Phone
+      # Value
+      value: +123456789
+# Scores
+# Score list (homogeneous array).
+-
+  # Score
+  # A score (float).
+  - 98.7
+  # Score
+  # A score (float).
+  - 87.2
+# Simple Field
+# A simple string.
+- bar # Bar Label
+# Object with anyOf
+-
+  # Field B
+  fieldB: 42

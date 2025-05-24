@@ -1,0 +1,36 @@
+{
+  "title": "Demographic",
+  "type": "array",
+  "items": [
+    {
+      "title": "Person Type",
+      "type": "object",
+      "properties": {
+        "gender": {
+          "title": "Gender",
+          "type": "string",
+          "enum": [
+            "m",
+            "f"
+          ],
+          "enumNames": [
+            "Male",
+            "Female"
+          ]
+        },
+        "age": {
+          "title": "Age",
+          "type": "integer"
+        }
+      }
+    },
+    {
+      "title": "Portions",
+      "type": "array",
+      "items": {
+        "title": "In percentage %",
+        "type": "number"
+      }
+    }
+  ]
+}

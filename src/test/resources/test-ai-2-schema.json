@@ -1,0 +1,15 @@
+{
+  "title": "Favorite Color",
+  "description": "The user's favorite color.",
+  "type": "string",
+  "enum": [
+    "red",
+    "green",
+    "blue"
+  ],
+  "enumNames": [
+    "Red Color",
+    "Green Color",
+    "Blue Color"
+  ]
+}

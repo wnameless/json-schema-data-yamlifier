@@ -1,0 +1,25 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "foo": {
+        "title": "Foo field",
+        "type": "string"
+      },
+      "bar": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "baz": {
+              "title": "Baz field",
+              "description": "A very deep nested field",
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

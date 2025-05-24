@@ -1,0 +1,15 @@
+---
+# FooBar
+# Foo and Bar mean nothing.
+# Array of FooBar
+items:
+  # Maybe Foo or Bar
+  -
+    # Foo
+    foo: baz
+  # Maybe Foo or Bar
+  -
+    # Bar
+    bar: qux
+# First name
+firstName: Chuck

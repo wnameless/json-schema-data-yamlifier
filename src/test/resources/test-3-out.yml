@@ -1,0 +1,28 @@
+---
+# User Name
+name: John Doe
+# User Age
+age: 30
+gender: male
+# Generation
+generation: 90 # 1990s
+# The user's jobs array
+jobs:
+  # Job item
+  - worker # 工人
+  # Job item
+  - reader # 讀者
+# Nested complex array
+interests:
+  # Interest object
+  -
+    # Duration
+    duration: 3 # Less than 3 years
+    # Hobby
+    hobby: Chess
+  # Interest object
+  -
+    # Duration
+    duration: 1 # Less than 1 year
+    # Hobby
+    hobby: Swimming

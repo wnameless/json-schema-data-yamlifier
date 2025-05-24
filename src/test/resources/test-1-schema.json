@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "User Name"
+    },
+    "age": {
+      "type": "integer",
+      "title": "User Age"
+    },
+    "jobs": {
+      "type": "array",
+      "title": "The user's jobs array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "reader",
+          "worker"
+        ],
+        "enumNames": [
+          "讀者",
+          "工人"
+        ],
+        "title": "Job item"
+      }
+    },
+    "interests": {
+      "type": "array",
+      "title": "Nested complex array",
+      "items": {
+        "type": "object",
+        "title": "Interest object",
+        "properties": {
+          "duration": {
+            "type": "integer",
+            "title": "Duration"
+          },
+          "hobby": {
+            "type": "string",
+            "title": "Hobby"
+          }
+        }
+      }
+    }
+  }
+}

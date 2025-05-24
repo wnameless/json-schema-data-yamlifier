@@ -1,0 +1,14 @@
+---
+# Demographic
+# Person Type
+-
+  # Gender
+  gender: f # Female
+  # Age
+  age: 25
+# Portions
+-
+  # In percentage %
+  - 4.56
+  # In percentage %
+  - 7.89

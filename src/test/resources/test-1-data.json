@@ -1,0 +1,13 @@
+{
+  "jobs": [
+    "worker"
+  ],
+  "interests": [
+    {
+      "duration": 1,
+      "hobby": "Card"
+    }
+  ],
+  "name": "John Doe",
+  "age": 30
+}

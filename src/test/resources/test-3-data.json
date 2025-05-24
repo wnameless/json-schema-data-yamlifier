@@ -1,0 +1,20 @@
+{
+  "name": "John Doe",
+  "age": 30,
+  "gender": "male",
+  "generation": "90",
+  "jobs": [
+    "worker",
+    "reader"
+  ],
+  "interests": [
+    {
+      "duration": 3,
+      "hobby": "Chess"
+    },
+    {
+      "duration": 1,
+      "hobby": "Swimming"
+    }
+  ]
+}
